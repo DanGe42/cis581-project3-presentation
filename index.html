@@ -149,7 +149,7 @@ for i = 1:size(featuresXY, 1)
     currentValue = cornerValues(i);
     distRow = distMat(i, :);
 
-    minRadius(i) = min(distRow(cornerValues > robustness * currentValue));
+    minRadius(i) = min(distRow(cornerValues &gt; robustness * currentValue));
 end
 % ... snip ...
             </code></pre>
